@@ -1,0 +1,147 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #008c9e;
+            height: 80px;
+        }
+        .navbar h2 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+        .navbar-nav .nav-link {
+            font-size: 1.1rem;
+            color: white;
+        }
+        .navbar-nav .nav-link.active {
+            font-weight: bold;
+            color: #ffeb3b;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffeb3b;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            width: 80%;
+            padding: 20px;
+            margin-top: 5%;
+        }
+        .contact-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .contact-header h1 {
+            font-size: 2rem;
+            color: #008c9e;
+        }
+        .contact-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .contact-card {
+            width: 30%;
+            background-color: #e9f7f8;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .contact-card p {
+            font-size: 1rem;
+            margin: 5px 0;
+            color: #333;
+        }
+        .contact-card a {
+            color: #008c9e;
+            text-decoration: none;
+        }
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <h2>Best Cars Dealership</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="card">
+        <div class="contact-header">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Reach out to us via any of the methods below.</p>
+        </div>
+        <div class="contact-section">
+            <div class="contact-card">
+                <img src="/static/contact.png" alt="Customer Service">
+                <p><strong>Customer Service</strong></p>
+                <p>Email: <a href="mailto:support@bestcars.com">support@bestcars.com</a></p>
+                <p>Phone: 1-800-123-4567</p>
+            </div>
+            <div class="contact-card">
+                <img src="/static/contact.png" alt="Advertising">
+                <p><strong>National Advertising</strong></p>
+                <p>Email: <a href="mailto:nationalsales@bestcars.com">nationalsales@bestcars.com</a></p>
+                <p>Phone: 1-800-234-5678</p>
+            </div>
+            <div class="contact-card">
+                <img src="/static/contact.png" alt="Public Relations">
+                <p><strong>Public Relations</strong></p>
+                <p>Email: <a href="mailto:pr@bestcars.com">pr@bestcars.com</a></p>
+                <p>Phone: 1-800-345-6789</p>
+            </div>
+        </div>
+        <div class="contact-section">
+            <div class="contact-card">
+                <img src="/static/contact.png" alt="Head Office">
+                <p><strong>Head Office</strong></p>
+                <p>Email: <a href="mailto:headoffice@bestcars.com">headoffice@bestcars.com</a></p>
+                <p>Phone: 312-611-1111</p>
+                <p>Address: 123 Main St, Chicago, IL</p>
+            </div>
+            <div class="contact-card">
+                <img src="/static/contact.png" alt="Dealerships">
+                <p><strong>Become a Dealer</strong></p>
+                <p>Email: <a href="mailto:dealers@bestcars.com">dealers@bestcars.com</a></p>
+                <p>Phone: 1-800-456-7890</p>
+                <p>Visit: <a href="https://www.growwithbestcars.com">growwithbestcars.com</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
